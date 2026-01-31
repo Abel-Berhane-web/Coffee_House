@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Fasil Buna</title>
+  <meta name="description" content="Fasil Buna Menu – Traditional Ethiopian breakfast, coffee, and authentic dishes." />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+  <div class="logo">
+    <i class="fas fa-mug-hot logo-icon"></i>
+    <span>Coffee House</span>
+  </div>
+  
+  <!-- Add this hamburger button -->
+  <div class="mobile-toggle" id="mobileToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+  
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" data-en="Home" data-am="መነሻ">Home</a>
+    <a href="menu.html" class="active" data-en="Menu" data-am="ምናሌ">Menu</a>
+    <a href="about.html" data-en="About" data-am="ስለ እኛ">About</a>
+    <a href="gallery.html" data-en="Gallery" data-am="ምስሎች">Gallery</a>
+    <a href="contact.html" data-en="Contact" data-am="አግኙን">Contact</a>
+    <div class="lang-toggle" id="langToggle">
+      <i class="fas fa-globe"></i>
+      <span>EN</span>
+    </div>
+  </div>
+</nav>
+      
+      
+  </header>
+
+  <div class="page-title">
+        <h1 data-en="Our Menu" data-am="ምናሌ">Our Menu</h1>
+        <p data-en="Click on a category to view items" data-am="ንጥል ለማየት ምድብ ላይ ጠቅ ያድርጉ">Click on a category to view items</p>
+      </div>
+    </div>
+
+  <!-- Menu Content -->
+  <div class="container">
+    <!-- Accordion Menu -->
+    <div class="menu-container">
+      <div class="accordion-menu">
+        
+        <!-- Breakfast Category -->
+        <div class="accordion-item">
+          <div class="accordion-header active" data-category="breakfast">
+            <div class="category-icon">
+              <i class="fas fa-sun"></i>
+            </div>
+            <div class="category-info">
+              <div class="category-name" data-en="Breakfast" data-am="ቁርስ">Breakfast</div>
+              <div class="category-count">4 items</div>
+            </div>
+            <div class="accordion-toggle">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          
+          <div class="accordion-content active">
+            <div class="category-description" data-en="Start your day with traditional Ethiopian breakfast" 
+                 data-am="ቀንዎን ባህላዊ የኢትዮጵያ ቁርስ ይጀምሩ">
+            </div>
+            
+            <div class="food-items">
+              <div class="food-grid">
+                <!-- Egg Scramble -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1606170033648-5d55a0f4ee0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Egg Scramble">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name" data-en="Egg Scramble" data-am="እንቁላል ፍርፍር">Egg Scramble</h3>
+                      <span class="food-price">180 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="Scrambled eggs served with fresh bread, peppers, onions, and tomatoes" 
+                       data-am="እንቁላል ፍርፍር ከትኩስ ዳቦ፣ ቃሪያ፣ ሽንኩርት እና ቲማቲም ጋር">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-egg"></i> <span data-en="Eggs" data-am="እንቁላል">Eggs</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-bread-slice"></i> <span data-en="Bread" data-am="ዳቦ">Bread</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-pepper-hot"></i> <span data-en="Peppers" data-am="ቃሪያ">Peppers</span></span>
+                    </div>
+                    <span class="food-type" data-en="Vegetarian" data-am="ነፍጠኛ">Vegetarian</span>
+                  </div>
+                </div>
+
+                <!-- Traditional Fitfit -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1551364323-63b6d8b4a68d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Traditional Fitfit">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name" data-en="Traditional Fitfit" data-am="ባህላዊ ፍትፍት">Traditional Fitfit</h3>
+                      <span class="food-price">220 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="Injera pieces with spiced butter, berbere, and yogurt" 
+                       data-am="እንጀራ ቁርጥራጮች ከምጥጥን ቂቤ፣ በርበሬ እና የሚስጥር ጋር">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-bread-slice"></i> <span data-en="Injera" data-am="እንጀራ">Injera</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-pepper-hot"></i> <span data-en="Berbere" data-am="በርበሬ">Berbere</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-cheese"></i> <span data-en="Yogurt" data-am="የሚስጥር">Yogurt</span></span>
+                    </div>
+                    <span class="food-type" data-en="Traditional" data-am="ባህላዊ">Traditional</span>
+                  </div>
+                </div>
+
+                <!-- Ful Medames -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Ful Medames">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name" data-en="Ful Medames" data-am="ፉል መዳመስ">Ful Medames</h3>
+                      <span class="food-price">200 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="Slow-cooked fava beans with olive oil, lemon, and spices" 
+                       data-am="ቀስ በቀስ የተቆየ ፉል ከወይራ ዘይት፣ ሎሚ እና ምጥጥናት ጋር">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-seedling"></i> <span data-en="Fava Beans" data-am="ፉል">Fava Beans</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-oil-can"></i> <span data-en="Olive Oil" data-am="ወይራ ዘይት">Olive Oil</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-lemon"></i> <span data-en="Lemon" data-am="ሎሚ">Lemon</span></span>
+                    </div>
+                    <span class="food-type" data-en="Vegan" data-am="ቬጋን">Vegan</span>
+                  </div>
+                </div>
+
+                <!-- Traditional Coffee -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Ethiopian Coffee">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name" data-en="Traditional Coffee" data-am="ባህላዊ ቡና">Traditional Coffee</h3>
+                      <span class="food-price">120 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="Freshly roasted Ethiopian coffee with traditional ceremony" 
+                       data-am="በባህላዊ ሥርዓት የተጠጋጋ ኢትዮጵያዊ ቡና">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-mug-hot"></i> <span data-en="Coffee" data-am="ቡና">Coffee</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-fire"></i> <span data-en="Fresh Roast" data-am="ትኩስ ጠጋጋ">Fresh Roast</span></span>
+                    </div>
+                    <span class="food-type" data-en="Traditional" data-am="ባህላዊ">Traditional</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sandwich Category -->
+        <div class="accordion-item">
+          <div class="accordion-header" data-category="sandwich">
+            <div class="category-icon">
+              <i class="fas fa-bread-slice"></i>
+            </div>
+            <div class="category-info">
+              <div class="category-name" data-en="Sandwich" data-am="ሳንዱች">Sandwich</div>
+              <div class="category-count">3 items</div>
+            </div>
+            <div class="accordion-toggle">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          
+          <div class="accordion-content">
+            <div class="category-description" data-en="Freshly made sandwiches with quality ingredients" 
+                 data-am="ከጥራት ያለው ንጥረ ነገር በተሰራ ትኩስ ሳንዱች">
+            </div>
+            
+            <div class="food-items">
+              <div class="food-grid">
+                <!-- Chicken Sandwich -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Chicken Sandwich">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name" data-en="Chicken Sandwich" data-am="የዶሮ ሳንዱች">Chicken Sandwich</h3>
+                      <span class="food-price">250 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="Grilled chicken breast with fresh vegetables and special sauce" 
+                       data-am="የተጠበሰ የዶሮ ደረት ከትኩስ አትክልት እና ልዩ ስልስ ጋር">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-drumstick-bite"></i> <span data-en="Chicken" data-am="ዶሮ">Chicken</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-leaf"></i> <span data-en="Vegetables" data-am="አትክልት">Vegetables</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-cheese"></i> <span data-en="Cheese" data-am="ጥቅል">Cheese</span></span>
+                    </div>
+                    <span class="food-type" data-en="Popular" data-am="ተወዳጅ">Popular</span>
+                  </div>
+                </div>
+
+                <!-- Beef Sandwich -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Beef Sandwich">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name" data-en="Beef Sandwich" data-am="የስጋ ሳንዱች">Beef Sandwich</h3>
+                      <span class="food-price">280 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="Sliced beef with melted cheese and grilled vegetables" 
+                       data-am="ቆርጠህ የተቀረጸ ስጋ ከቀቀለ ጥቅል እና የተጠበሰ አትክልት ጋር">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-hamburger"></i> <span data-en="Beef" data-am="ስጋ">Beef</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-cheese"></i> <span data-en="Cheese" data-am="ጥቅል">Cheese</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-pepper-hot"></i> <span data-en="Grilled Veg" data-am="የተጠበሰ አትክልት">Grilled Veg</span></span>
+                    </div>
+                    <span class="food-type" data-en="Premium" data-am="ፕሪሚየም">Premium</span>
+                  </div>
+                </div>
+
+                <!-- Veggie Sandwich -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Veggie Sandwich">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name" data-en="Veggie Delight" data-am="አትክልት ዲላይት">Veggie Delight</h3>
+                      <span class="food-price">200 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="Fresh vegetables with avocado and hummus spread" 
+                       data-am="ትኩስ አትክልቶች ከአቮካዶ እና ሁሙስ ቆራጭ ጋር">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-seedling"></i> <span data-en="Fresh Veg" data-am="ትኩስ አትክልት">Fresh Veg</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-avocado"></i> <span data-en="Avocado" data-am="አቮካዶ">Avocado</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-seedling"></i> <span data-en="Hummus" data-am="ሁሙስ">Hummus</span></span>
+                    </div>
+                    <span class="food-type" data-en="Vegetarian" data-am="ነፍጠኛ">Vegetarian</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Burger Category -->
+        <div class="accordion-item">
+          <div class="accordion-header" data-category="burger">
+            <div class="category-icon">
+              <i class="fas fa-hamburger"></i>
+            </div>
+            <div class="category-info">
+              <div class="category-name" data-en="Burger" data-am="በርገር">Burger</div>
+              <div class="category-count">4 items</div>
+            </div>
+            <div class="accordion-toggle">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          
+          <div class="accordion-content">
+            <div class="category-description" data-en="Juicy burgers made with premium ingredients" 
+                 data-am="ከጥራት ያለው ንጥረ ነገር የተሰሩ ጠጅ ያላቸው በርገሮች">
+            </div>
+            
+            <div class="food-items">
+              <div class="food-grid">
+                <!-- Beef Burger -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Beef Burger">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name" data-en="Classic Beef Burger" data-am="ክላሲክ የስጋ በርገር">Classic Beef Burger</h3>
+                      <span class="food-price">280 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="Fresh beef patty with cheese, lettuce, tomato, and special sauce" 
+                       data-am="ትኩስ የስጋ ፓቲ ከጥቅል፣ ሰላጣ፣ ቲማቲም እና ልዩ ስልስ ጋር">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-hamburger"></i> <span data-en="Beef" data-am="ስጋ">Beef</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-cheese"></i> <span data-en="Cheese" data-am="ጥቅል">Cheese</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-leaf"></i> <span data-en="Lettuce" data-am="ሰላጣ">Lettuce</span></span>
+                    </div>
+                    <span class="food-type" data-en="Signature" data-am="ምልክት">Signature</span>
+                  </div>
+                </div>
+
+                <!-- Chicken Burger -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Chicken Burger">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name" data-en="Chicken Burger" data-am="የዶሮ በርገር">Chicken Burger</h3>
+                      <span class="food-price">260 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="Grilled chicken patty with crispy lettuce and special mayo" 
+                       data-am="የተጠበሰ የዶሮ ፓቲ ከክሪስፒ ሰላጣ እና ልዩ ማዮ ጋር">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-drumstick-bite"></i> <span data-en="Chicken" data-am="ዶሮ">Chicken</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-leaf"></i> <span data-en="Lettuce" data-am="ሰላጣ">Lettuce</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-egg"></i> <span data-en="Mayo" data-am="ማዮ">Mayo</span></span>
+                    </div>
+                    <span class="food-type" data-en="Popular" data-am="ተወዳጅ">Popular</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Traditional Foods Category -->
+        <div class="accordion-item">
+          <div class="accordion-header" data-category="traditional">
+            <div class="category-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <div class="category-info">
+              <div class="category-name" data-en="Traditional Foods" data-am="ባህላዊ ምግቦች">Traditional Foods</div>
+              <div class="category-count">6 items</div>
+            </div>
+            <div class="accordion-toggle">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          
+          <div class="accordion-content">
+            <div class="category-description" data-en="Authentic Ethiopian dishes prepared traditionally" 
+                 data-am="ባህላዊ መንገድ የተዘጋጁ እውነተኛ የኢትዮጵያ ምግቦች">
+            </div>
+            
+            <div class="food-items">
+              <div class="food-grid">
+                <!-- Doro Wot -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03246963d9d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Doro Wot">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name">Doro Wot</h3>
+                      <span class="food-price">450 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="Spicy chicken stew with boiled eggs, served with injera" 
+                       data-am="ምጥጥን ያለው ዶሮ ወጥ ከበሰለ እንቁላል፣ እንጀራ ጋር">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-drumstick-bite"></i> <span data-en="Chicken" data-am="ዶሮ">Chicken</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-egg"></i> <span data-en="Eggs" data-am="እንቁላል">Eggs</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-pepper-hot"></i> <span data-en="Berbere" data-am="በርበሬ">Berbere</span></span>
+                    </div>
+                    <span class="food-type" data-en="Traditional" data-am="ባህላዊ">Traditional</span>
+                  </div>
+                </div>
+
+                <!-- Tibs -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Tibs">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name" data-en="Beef Tibs" data-am="የስጋ ጥብስ">Beef Tibs</h3>
+                      <span class="food-price">380 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="Sautéed beef with onions, peppers, and rosemary" 
+                       data-am="የተጠበሰ ስጋ ከሽንኩርት፣ ቃሪያ እና ሮዝማሪ ጋር">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-hamburger"></i> <span data-en="Beef" data-am="ስጋ">Beef</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-pepper-hot"></i> <span data-en="Peppers" data-am="ቃሪያ">Peppers</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-leaf"></i> <span data-en="Herbs" data-am="ዕፅዋት">Herbs</span></span>
+                    </div>
+                    <span class="food-type" data-en="Traditional" data-am="ባህላዊ">Traditional</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Beverages Category -->
+        <div class="accordion-item">
+          <div class="accordion-header" data-category="beverages">
+            <div class="category-icon">
+              <i class="fas fa-glass-cheers"></i>
+            </div>
+            <div class="category-info">
+              <div class="category-name" data-en="Beverages" data-am="መጠጦች">Beverages</div>
+              <div class="category-count">8 items</div>
+            </div>
+            <div class="accordion-toggle">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          
+          <div class="accordion-content">
+            <div class="category-description" data-en="Refresh yourself with our selection of drinks" 
+                 data-am="በመጠጦቻችን ምርጫ እራስዎን ነፍሰጡ">
+            </div>
+            
+            <div class="food-items">
+              <div class="food-grid">
+                <!-- Cappuccino -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Cappuccino">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name">Specialty Cappuccino</h3>
+                      <span class="food-price">160 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="Perfectly balanced espresso with steamed milk and delicate foam" 
+                       data-am="ፍጹም የተመጣጠነ ኢስፕሬሶ ከተንቀጠቀጠ ወተት እና ስሜት ያለው ፎም ጋር">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-mug-hot"></i> <span data-en="Espresso" data-am="ኢስፕሬሶ">Espresso</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-wind"></i> <span data-en="Steamed Milk" data-am="ተንቀጠቀጠ ወተት">Steamed Milk</span></span>
+                    </div>
+                    <span class="food-type" data-en="Hot" data-am="ትኩስ">Hot</span>
+                  </div>
+                </div>
+
+                <!-- Fresh Juice -->
+                <div class="food-item">
+                  <div class="food-image">
+                    <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Fresh Juice">
+                  </div>
+                  <div class="food-details">
+                    <div class="food-header">
+                      <h3 class="food-name" data-en="Fresh Mango Juice" data-am="ትኩስ ማንጎ ጭማቂ">Fresh Mango Juice</h3>
+                      <span class="food-price">120 ብር</span>
+                    </div>
+                    <p class="food-description" data-en="100% fresh mango juice, no added sugar" 
+                       data-am="100% ትኩስ ማንጎ ጭማቂ፣ ስኳር አልተጨመረም">
+                    </p>
+                    <div class="food-ingredients">
+                      <span class="ingredient-tag"><i class="fas fa-apple-alt"></i> <span data-en="Mango" data-am="ማንጎ">Mango</span></span>
+                      <span class="ingredient-tag"><i class="fas fa-snowflake"></i> <span data-en="Fresh" data-am="ትኩስ">Fresh</span></span>
+                    </div>
+                    <span class="food-type" data-en="Cold" data-am="ቀዝቃዛ">Cold</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more categories following the same pattern... -->
+
+      </div>
+    </div>
+
+    <!-- Bank Accounts Section -->
+    <div class="bank-section">
+      <h2><i class="fas fa-university"></i> <span data-en="Bank Accounts" data-am="የባንክ አካውንት">Bank Accounts</span></h2>
+      <div class="bank-accounts">
+        <div class="bank-account">
+          <h3 data-en="Commercial Bank of Ethiopia" data-am="የኢትዮጵያ ንግድ ባንክ">Commercial Bank of Ethiopia</h3>
+          <div class="bank-detail">
+            <i class="fas fa-user"></i>
+            <span>Cofee House Cafe & Restaurant</span>
+          </div>
+          <div class="bank-detail">
+            <i class="fas fa-hashtag"></i>
+            <span>Account: ******************</span>
+          </div>
+          <div class="bank-detail">
+            <i class="fas fa-code-branch"></i>
+            <span>Bole Branch</span>
+          </div>
+        </div>
+        
+        <div class="bank-account">
+          <h3 data-en="Awash Bank" data-am="አዋሽ ባንክ">Awash Bank</h3>
+          <div class="bank-detail">
+            <i class="fas fa-user"></i>
+            <span>Cofee House Cafe & Restaurant</span>
+          </div>
+          <div class="bank-detail">
+            <i class="fas fa-hashtag"></i>
+            <span>Account: ******************</span>
+          </div>
+          <div class="bank-detail">
+            <i class="fas fa-code-branch"></i>
+            <span>Bole Branch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>Coffee House</h3>
+          <p data-en="Gondar's favorite cafe since 2015, serving premium coffee and authentic Ethiopian dishes in a warm, welcoming atmosphere." 
+             data-am="ከ 2015 ጀምሮ የጎንደር ተወዳጅ ካፌ፣ ጥራት ያለው ቡና እና እውነተኛ የኢትዮጵያ ምግቦችን በሞቅ ያለ እና እንኳን በደህና መጡ የሚል አካባቢ የሚያቀርብ።">
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3 data-en="Quick Links" data-am="ፈጣን አገናኞች">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-en="Home" data-am="መነሻ">Home</span></a></li>
+            <li><a href="menu.html"><i class="fas fa-chevron-right"></i> <span data-en="Menu" data-am="ምናሌ">Menu</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-en="About Us" data-am="ስለ እኛ">About Us</span></a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> <span data-en="Gallery" data-am="ምስሎች">Gallery</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-en="Contact" data-am="አግኙን">Contact</span></a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3 data-en="Contact Info" data-am="የመገኛ መረጃ">Contact Info</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt"></i> <span data-en="Piyassa, Gondar, Ethiopia" data-am="ፒያሳ፣ ጎንደር፣ ኢትዮጵያ" >Piyassa, Gondar, Ethiopia</span></li>
+            <li><i class="fas fa-phone"></i> <span>+251 91 234 5678</span></li>
+            <li><i class="fas fa-clock"></i> <span data-en="Daily: 7:00 AM - 10:00 PM" data-am="በየቀኑ: 7:00 ጠዋት - 10:00 ማታ">Daily: 7:00 AM - 10:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2015-2026 Coffee House Gondar. <span data-en="All rights reserved." data-am="ሁሉም መብቶች የተጠበቁ ናቸው።">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Accordion Functionality
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    
+    accordionHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        const accordionItem = header.parentElement;
+        const accordionContent = header.nextElementSibling;
+        
+        // Close all other accordion items
+        document.querySelectorAll('.accordion-item').forEach(item => {
+          if (item !== accordionItem) {
+            const otherHeader = item.querySelector('.accordion-header');
+            const otherContent = item.querySelector('.accordion-content');
+            otherHeader.classList.remove('active');
+            otherContent.classList.remove('active');
+          }
+        });
+        
+        // Toggle current accordion
+        header.classList.toggle('active');
+        accordionContent.classList.toggle('active');
+        
+        // If opening, scroll to the header
+        if (header.classList.contains('active')) {
+          setTimeout(() => {
+            header.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 300);
+        }
+      });
+    });
+
+    // Language Toggle
+    let currentLang = 'en';
+    const langToggle = document.getElementById('langToggle');
+    const langText = langToggle.querySelector('span');
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      
+      // Update all elements with data attributes
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+      
+      // Update toggle button
+      langText.textContent = lang === 'en' ? 'AM' : 'EN';
+      localStorage.setItem('fasilLang', lang);
+    }
+
+    // Load saved language
+    const savedLang = localStorage.getItem('fasilLang');
+    if (savedLang) setLanguage(savedLang);
+
+    // Toggle language on click
+    langToggle.addEventListener('click', () => {
+      const newLang = currentLang === 'en' ? 'am' : 'en';
+      setLanguage(newLang);
+    });
+
+    // Smooth scroll for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Mobile Navigation Toggle
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+
+mobileToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  mobileToggle.innerHTML = navLinks.classList.contains('active') 
+    ? '<i class="fas fa-times"></i>' 
+    : '<i class="fas fa-bars"></i>';
+});
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+  });
+});
+
+ // Header scroll effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>

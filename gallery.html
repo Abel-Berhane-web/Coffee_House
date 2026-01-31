@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Coffee House</title>
+  <meta name="description" content="Gallery - See Coffee House Gondar's atmosphere, food, and coffee." />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+  <div class="logo">
+    <i class="fas fa-mug-hot logo-icon"></i>
+    <span>Coffee House</span>
+  </div>
+  
+  <!-- Add this hamburger button -->
+  <div class="mobile-toggle" id="mobileToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+  
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" data-en="Home" data-am="መነሻ">Home</a>
+    <a href="menu.html"  data-en="Menu" data-am="ምናሌ">Menu</a>
+    <a href="about.html" data-en="About" data-am="ስለ እኛ">About</a>
+    <a href="gallery.html" class="active" data-en="Gallery" data-am="ምስሎች">Gallery</a>
+    <a href="contact.html" data-en="Contact" data-am="አግኙን">Contact</a>
+    <div class="lang-toggle" id="langToggle">
+      <i class="fas fa-globe"></i>
+      <span>EN</span>
+    </div>
+  </div>
+</nav>
+      
+      
+    </div>
+  </header>
+<div class="page-title">
+        <h1 data-en="Our Gallery" data-am="የእኛ ምስሎች">Our Gallery</h1>
+        <p data-en="Explore Coffee House through photos of our space, food, and coffee" 
+           data-am="በምስሎቻችን በኩል የ Coffee House ቦታ፣ ምግብ እና ቡና ይመልከቱ">Explore Coffee House through photos of our space, food, and coffee</p>
+      </div>
+  <!-- Gallery Content -->
+  <section class="section">
+    <div class="container">
+      <div class="gallery-tabs">
+        <button class="gallery-tab active" data-filter="all">
+          <i class="fas fa-th"></i>
+          <span data-en="All Photos" data-am="ሁሉም ፎቶዎች">All Photos</span>
+        </button>
+        <button class="gallery-tab" data-filter="interior">
+          <i class="fas fa-home"></i>
+          <span data-en="Interior" data-am="ውስጠኛ">Interior</span>
+        </button>
+        <button class="gallery-tab" data-filter="food">
+          <i class="fas fa-utensils"></i>
+          <span data-en="Food & Drinks" data-am="ምግብ እና መጠጦች">Food & Drinks</span>
+        </button>
+        <button class="gallery-tab" data-filter="coffee">
+          <i class="fas fa-coffee"></i>
+          <span data-en="Coffee" data-am="ቡና">Coffee</span>
+        </button>
+        <button class="gallery-tab" data-filter="events">
+          <i class="fas fa-users"></i>
+          <span data-en="Events" data-am="ክስተቶች">Events</span>
+        </button>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Interior Photos -->
+        <div class="gallery-item" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coffee House Interior">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3 data-en="Cozy Seating Area" data-am="ማረፊያ ቦታ">Cozy Seating Area</h3>
+              <p data-en="Comfortable seating for relaxation" data-am="ለመዝናናት ምቹ መቀመጫ">Comfortable seating for relaxation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coffee Bar">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3 data-en="Coffee Bar" data-am="ቡና ባር">Coffee Bar</h3>
+              <p data-en="Where our baristas craft your drinks" data-am="ባሪስታዎቻችን መጠጦችዎን የሚሰሩበት">Where our baristas craft your drinks</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food & Drinks -->
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Traditional Ethiopian Food">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3 data-en="Traditional Platter" data-am="ባህላዊ ሳህን">Traditional Platter</h3>
+              <p data-en="Authentic Ethiopian dishes" data-am="እውነተኛ የኢትዮጵያ ምግቦች">Authentic Ethiopian dishes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Desserts">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3 data-en="Fresh Desserts" data-am="ትኩስ ጣፋጭ">Fresh Desserts</h3>
+              <p data-en="Daily prepared cakes and pastries" data-am="በየቀኑ የሚዘጋጁ ኬኮች እና ፓስተሪዎች">Daily prepared cakes and pastries</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coffee -->
+        <div class="gallery-item" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coffee Preparation">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3 data-en="Coffee Ceremony" data-am="ቡና ሥርዓት">Coffee Ceremony</h3>
+              <p data-en="Traditional Ethiopian coffee preparation" data-am="ባህላዊ የኢትዮጵያ ቡና ዝግጅት">Traditional Ethiopian coffee preparation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Latte Art">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3 data-en="Latte Art" data-am="የላቴ ስነ ጥበብ">Latte Art</h3>
+              <p data-en="Beautiful designs on every cup" data-am="በእያንዲንደ ኩባያ ላይ ውብ ዲዛይኖች">Beautiful designs on every cup</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Events -->
+        <div class="gallery-item" data-category="events">
+          <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Live Music">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3 data-en="Live Music Nights" data-am="የቀጥታ ሙዚቃ ማታዎች">Live Music Nights</h3>
+              <p data-en="Weekly music performances" data-am="የሳምንት የሙዚቃ ማሳያዎች">Weekly music performances</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events">
+          <img src="https://images.unsplash.com/photo-1519677100203-5f5a1c56b7b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Community Gathering">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3 data-en="Community Events" data-am="የማህበረሰብ ክስተቶች">Community Events</h3>
+              <p data-en="Local gatherings and meetings" data-am="አካባቢያዊ ስብሰባዎች እና ስብሰባዎች">Local gatherings and meetings</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- More Photos -->
+        <div class="gallery-item" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Outdoor Seating">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3 data-en="Outdoor Patio" data-am="ውጫዊ ፓቲዮ">Outdoor Patio</h3>
+              <p data-en="Al fresco dining experience" data-am="ከተፈጥሮ ጋር የምግብ ተሞክሮ">Al fresco dining experience</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="food">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Breakfast">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3 data-en="Morning Breakfast" data-am="ጠዋት ቁርስ">Morning Breakfast</h3>
+              <p data-en="Start your day right with us" data-am="ቀንዎን ከእኛ ጋር በትክክል ይጀምሩ">Start your day right with us</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coffee Beans">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3 data-en="Fresh Coffee Beans" data-am="ትኩስ ቡና ቅንድብ">Fresh Coffee Beans</h3>
+              <p data-en="Ethiopian coffee at its best" data-am="የኢትዮጵያ ቡና በጣም ጥሩው">Ethiopian coffee at its best</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events">
+          <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Art Exhibition">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3 data-en="Art Exhibitions" data-am="የስነ ጥበብ ማሳያዎች">Art Exhibitions</h3>
+              <p data-en="Showcasing local artists" data-am="አካባቢያዊ አርቲስቶችን ማሳየት">Showcasing local artists</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <div class="lightbox-nav">
+        <button class="lightbox-btn" id="lightboxPrev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-btn" id="lightboxNext">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>Coffee House</h3>
+          <p data-en="Gondar's favorite cafe since 2015, serving premium coffee and authentic Ethiopian dishes in a warm, welcoming atmosphere." 
+             data-am="ከ 2015 ጀምሮ የጎንደር ተወዳጅ ካፌ፣ ጥራት ያለው ቡና እና እውነተኛ የኢትዮጵያ ምግቦችን በሞቅ ያለ እና እንኳን በደህና መጡ የሚል አካባቢ የሚያቀርብ።">
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3 data-en="Quick Links" data-am="ፈጣን አገናኞች">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> <span data-en="Home" data-am="መነሻ">Home</span></a></li>
+            <li><a href="menu.html"><i class="fas fa-chevron-right"></i> <span data-en="Menu" data-am="ምናሌ">Menu</span></a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> <span data-en="About Us" data-am="ስለ እኛ">About Us</span></a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> <span data-en="Gallery" data-am="ምስሎች">Gallery</span></a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> <span data-en="Contact" data-am="አግኙን">Contact</span></a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3 data-en="Contact Info" data-am="የመገኛ መረጃ">Contact Info</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt"></i> <span data-en="Piyassa, Gondar, Ethiopia" data-am="ፒያሳ፣ ጎንደር፣ ኢትዮጵያ" >Piyassa, Gondar, Ethiopia</span></li>
+            <li><i class="fas fa-phone"></i> <span>+251 91 234 5678</span></li>
+            <li><i class="fas fa-clock"></i> <span data-en="Daily: 7:00 AM - 10:00 PM" data-am="በየቀኑ: 7:00 ጠዋት - 10:00 ማታ">Daily: 7:00 AM - 10:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2015-2026 Coffee House Gondar. <span data-en="All rights reserved." data-am="ሁሉም መብቶች የተጠበቁ ናቸው።">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Language Toggle
+    let currentLang = 'en';
+    const langToggle = document.getElementById('langToggle');
+    const langText = langToggle.querySelector('span');
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      
+      // Update all elements with data attributes
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+      
+      // Update toggle button
+      langText.textContent = lang === 'en' ? 'AM' : 'EN';
+      localStorage.setItem('coffeeHouseLang', lang);
+    }
+
+    // Load saved language
+    const savedLang = localStorage.getItem('coffeeHouseLang');
+    if (savedLang) setLanguage(savedLang);
+
+    // Toggle language on click
+    langToggle.addEventListener('click', () => {
+      const newLang = currentLang === 'en' ? 'am' : 'en';
+      setLanguage(newLang);
+    });
+
+    // Gallery Filtering
+    const galleryTabs = document.querySelectorAll('.gallery-tab');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    galleryTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        galleryTabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+        
+        const filter = tab.getAttribute('data-filter');
+        
+        // Show/hide gallery items based on filter
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Lightbox Functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+    const galleryImages = document.querySelectorAll('.gallery-item img');
+    
+    let currentImageIndex = 0;
+    const imagesArray = Array.from(galleryImages);
+
+    // Open lightbox when clicking an image
+    galleryImages.forEach((img, index) => {
+      img.addEventListener('click', () => {
+        currentImageIndex = index;
+        updateLightbox();
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+      });
+    });
+
+    // Close lightbox
+    lightboxClose.addEventListener('click', () => {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    });
+
+    // Close lightbox when clicking outside the image
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Navigation
+    lightboxPrev.addEventListener('click', () => {
+      currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+      updateLightbox();
+    });
+
+    lightboxNext.addEventListener('click', () => {
+      currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+      updateLightbox();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+      
+      if (e.key === 'Escape') {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      } else if (e.key === 'ArrowLeft') {
+        currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+        updateLightbox();
+      } else if (e.key === 'ArrowRight') {
+        currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+        updateLightbox();
+      }
+    });
+
+    function updateLightbox() {
+      const img = imagesArray[currentImageIndex];
+      const parent = img.closest('.gallery-item');
+      const caption = parent.querySelector('.gallery-caption h3');
+      const description = parent.querySelector('.gallery-caption p');
+      
+      lightboxImg.src = img.src;
+      lightboxCaption.innerHTML = `
+        <h3>${caption.textContent}</h3>
+        <p>${description ? description.textContent : ''}</p>
+      `;
+    }
+
+    // Mobile Navigation Toggle
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+
+mobileToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  mobileToggle.innerHTML = navLinks.classList.contains('active') 
+    ? '<i class="fas fa-times"></i>' 
+    : '<i class="fas fa-bars"></i>';
+});
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+  });
+});
+// Header scroll effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>

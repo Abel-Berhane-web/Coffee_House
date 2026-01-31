@@ -1,0 +1,380 @@
+
+    
+    /* =========================
+       CSS Reset & Variables
+    ========================= */
+    :root {
+      --primary: #8B4513;
+      --secondary: #D4A574;
+      --accent: #C19A6B;
+      --dark: #1A1A1A;
+      --light: #F9F5F0;
+      --light-gray: #F0ECE5;
+      --text: #333333;
+      --white: #FFFFFF;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --radius: 16px;
+      --transition: all 0.3s ease;
+    }
+
+
+
+    .page-title {
+      text-align: center;
+      margin-top: 100px;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                  url('https://images.unsplash.com/photo-1559925393-8be0ec4767c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+      color: var(--white);
+      padding: 100px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .page-title h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+    .header{
+        background-color: var(--light);
+    }
+
+    /* =========================
+       Accordion Menu Layout
+    ========================= */
+     
+    .menu-container {
+      margin: 50px 0;
+    }
+
+    .accordion-menu {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .accordion-item:last-child {
+      border-bottom: none;
+    }
+
+    .accordion-header {
+      display: flex;
+      align-items: center;
+      padding: 25px 30px;
+      cursor: pointer;
+      transition: var(--transition);
+      background: var(--white);
+    }
+
+    .accordion-header:hover {
+      background: var(--light);
+    }
+
+    .accordion-header.active {
+      background: var(--light);
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .category-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--light-gray);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      color: var(--primary);
+      font-size: 1.3rem;
+      transition: var(--transition);
+    }
+
+    .accordion-header.active .category-icon {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .category-info {
+      flex: 1;
+    }
+
+    .category-name {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+
+    .category-count {
+      font-size: 0.9rem;
+      color: var(--text);
+      opacity: 0.7;
+    }
+
+    .accordion-toggle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--light-gray);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .accordion-header.active .accordion-toggle {
+      background: var(--primary);
+      color: var(--white);
+      transform: rotate(180deg);
+    }
+
+    /* =========================
+       Accordion Content
+    ========================= */
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+      background: var(--light);
+    }
+
+    .accordion-content.active {
+      max-height: 2000px;
+    }
+
+    .category-description {
+      padding: 25px 30px 15px;
+      color: var(--text);
+      opacity: 0.8;
+      font-style: italic;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .food-items {
+      padding: 20px 30px;
+    }
+
+    /* =========================
+       Food Items Grid
+    ========================= */
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .food-item {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: var(--transition);
+      border: 2px solid transparent;
+      box-shadow: var(--shadow);
+    }
+
+    .food-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+      border-color: var(--accent);
+    }
+
+    .food-image {
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .food-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .food-item:hover .food-image img {
+      transform: scale(1.05);
+    }
+
+    .food-details {
+      padding: 20px;
+    }
+
+    .food-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .food-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .food-price {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .food-description {
+      color: #666;
+      margin-bottom: 15px;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+
+    .food-ingredients {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .ingredient-tag {
+      padding: 5px 12px;
+      background: var(--light-gray);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .food-type {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(139, 69, 19, 0.1);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    /* =========================
+       Bank Accounts
+    ========================= */
+    .bank-section {
+      background: linear-gradient(135deg, var(--primary), #6B3410);
+      color: var(--white);
+      padding: 40px;
+      border-radius: var(--radius);
+      margin: 50px 0;
+    }
+
+    .bank-section h2 {
+      color: var(--white);
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .bank-accounts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .bank-account {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+    }
+
+    .bank-account h3 {
+      color: var(--secondary);
+      margin-bottom: 15px;
+    }
+
+    .bank-detail {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .bank-detail i {
+      color: var(--secondary);
+      width: 20px;
+    }
+
+    /* =========================
+       Responsive Design
+    ========================= */
+  
+    @media (max-width: 992px) {
+      .food-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .page-title h1 {
+        font-size: 2rem;
+      }
+      
+
+      
+      .food-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .accordion-header {
+        padding: 20px;
+      }
+      
+      .category-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+      }
+      
+      .category-name {
+        font-size: 1.2rem;
+      }
+      
+      .special-offer {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+      }
+      
+      .bank-section {
+        padding: 20px;
+        margin: 30px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 15px;
+      }
+      
+      .bank-accounts {
+        grid-template-columns: 1fr;
+      }
+      
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      .accordion-header {
+        padding: 15px;
+      }
+      
+      .food-items {
+        padding: 15px;
+      }
+    }
+
+    
